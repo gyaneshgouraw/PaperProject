@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     <title>RG Traders Pvt Ltd</title>
@@ -6,218 +6,177 @@
     <script type="text/javascript"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link href="css/Styling.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <style>
         .bimg {
-            background-image: url('images/wall1.jpg');
+            background-image: url('images/wall.jpg');
         }
     </style>
 </head>
 <body>
-    <div>
-        <nav class="navbar navbar-default bimg">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a href="#one" class="navbar-brand">one</a>
-                    <a href="#two" class="navbar-brand">two</a>
-                    <a href="#three" class="navbar-brand">three</a>
-                    <a href="#four" class="navbar-brand">four</a>
-                    <a href="#five" class="navbar-brand">five</a>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <header id="page-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="http://ironsummitmedia.github.io/startbootstrap-freelancer/img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Inspired by PureCSS.io</span>
+                        <hr class="star-light">
+                        <p class="skills">Landing Page Layout</p>
+                        <p class="skills">Scroll to see the effect</p>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
+    </header>
+    <div class="content-wrapper">
+        <section class="primary" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>PORTAFOLIO</h2>
+                        <hr class="star-primary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="http://lorempixel.com/360/260/nature/">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="http://lorempixel.com/360/260/animals/">
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="http://lorempixel.com/360/260/abstract/">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="success" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>About</h2>
+                        <hr class="star-light">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2">
+                        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="primary" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Contact</h2>
+                        <hr class="star-primary">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                        <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                        <form name="sentMessage" id="contactForm" novalidate="">
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" placeholder="Name" id="name" required="" data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Email Address</label>
+                                    <input type="email" class="form-control" placeholder="Email Address" id="email" required="" data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Phone Number</label>
+                                    <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Message</label>
+                                    <textarea rows="5" class="form-control" placeholder="Message" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="success"></div>
+                            <div class="row">
+                                <div class="form-group col-xs-12">
+                                    <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container" style="min-height:200px; background-color:#18bc9c;color:#fff;text-align:center;padding-top:50px;">
+            INSPIRED BY PURECSS.IO © 2015
+        </footer>
     </div>
-     
-        <section>
-            <!--<img src="images/wall1.jpg" />-->
-            <article>
-                <p>
-                    With a combined capacity of 4,55,000 TPA, JK Paper, a unit of JK Organisation is India’s largest producer of Branded Papers and a leading player in Coated Papers and High-end Packaging Boards.  The Company began its journey more than half a century ago with 18,000 tons per annum capacity paper plant. It has grown over the years and maintained its quality leadership position.
 
-                    When Paper industry was content with producing ordinary Cream Wove quality, JK pioneered in 1962 the Surface sized Maplitho Paper (popularly came to be called ‘JK Maplitho’ – a premium quality printing paper ideally suited for the Litho Printing process. ‘JK Maplitho’ became Industry Benchmark.
-
-                    JK Paper has been constantly creating value in a highly capital intensive and cyclical business, where volume is traditionally considered as Key profit driver. Most companies concentrated on increasing capacity, JK Paper responded with a Brand driven strategy, with customer at its heart.
-
-                    JK Paper was among the earliest to invest in state-of-the-art A4 cutting lines for mass production of these products.
-
-                    JK Paper is synonymous with premium quality paper, which is reflected in customer’s trust in its products enjoying the ‘Brand’ status among its competitors. JK Copier’s status as the largest selling multifunctional office paper is not by chance but its efforts over the years.
-
-
-                </p>
-                <p>
-                    With a combined capacity of 4,55,000 TPA, JK Paper, a unit of JK Organisation is India’s largest producer of Branded Papers and a leading player in Coated Papers and High-end Packaging Boards.  The Company began its journey more than half a century ago with 18,000 tons per annum capacity paper plant. It has grown over the years and maintained its quality leadership position.
-
-                    When Paper industry was content with producing ordinary Cream Wove quality, JK pioneered in 1962 the Surface sized Maplitho Paper (popularly came to be called ‘JK Maplitho’ – a premium quality printing paper ideally suited for the Litho Printing process. ‘JK Maplitho’ became Industry Benchmark.
-
-                    JK Paper has been constantly creating value in a highly capital intensive and cyclical business, where volume is traditionally considered as Key profit driver. Most companies concentrated on increasing capacity, JK Paper responded with a Brand driven strategy, with customer at its heart.
-
-                    JK Paper was among the earliest to invest in state-of-the-art A4 cutting lines for mass production of these products.
-
-                    JK Paper is synonymous with premium quality paper, which is reflected in customer’s trust in its products enjoying the ‘Brand’ status among its competitors. JK Copier’s status as the largest selling multifunctional office paper is not by chance but its efforts over the years.
-
-
-                </p>
-            </article>
-        </section>
-
-        <section id="one">
-            <article>
-                <p>
-                    With a combined capacity of 4,55,000 TPA, JK Paper, a unit of JK Organisation is India’s largest producer of Branded Papers and a leading player in Coated Papers and High-end Packaging Boards.  The Company began its journey more than half a century ago with 18,000 tons per annum capacity paper plant. It has grown over the years and maintained its quality leadership position.
-
-                    When Paper industry was content with producing ordinary Cream Wove quality, JK pioneered in 1962 the Surface sized Maplitho Paper (popularly came to be called ‘JK Maplitho’ – a premium quality printing paper ideally suited for the Litho Printing process. ‘JK Maplitho’ became Industry Benchmark.
-
-                    JK Paper has been constantly creating value in a highly capital intensive and cyclical business, where volume is traditionally considered as Key profit driver. Most companies concentrated on increasing capacity, JK Paper responded with a Brand driven strategy, with customer at its heart.
-
-                    JK Paper was among the earliest to invest in state-of-the-art A4 cutting lines for mass production of these products.
-
-                    JK Paper is synonymous with premium quality paper, which is reflected in customer’s trust in its products enjoying the ‘Brand’ status among its competitors. JK Copier’s status as the largest selling multifunctional office paper is not by chance but its efforts over the years.
-
-
-                </p>
-                <p>
-                    With a combined capacity of 4,55,000 TPA, JK Paper, a unit of JK Organisation is India’s largest producer of Branded Papers and a leading player in Coated Papers and High-end Packaging Boards.  The Company began its journey more than half a century ago with 18,000 tons per annum capacity paper plant. It has grown over the years and maintained its quality leadership position.
-
-                    When Paper industry was content with producing ordinary Cream Wove quality, JK pioneered in 1962 the Surface sized Maplitho Paper (popularly came to be called ‘JK Maplitho’ – a premium quality printing paper ideally suited for the Litho Printing process. ‘JK Maplitho’ became Industry Benchmark.
-
-                    JK Paper has been constantly creating value in a highly capital intensive and cyclical business, where volume is traditionally considered as Key profit driver. Most companies concentrated on increasing capacity, JK Paper responded with a Brand driven strategy, with customer at its heart.
-
-                    JK Paper was among the earliest to invest in state-of-the-art A4 cutting lines for mass production of these products.
-
-                    JK Paper is synonymous with premium quality paper, which is reflected in customer’s trust in its products enjoying the ‘Brand’ status among its competitors. JK Copier’s status as the largest selling multifunctional office paper is not by chance but its efforts over the years.
-
-
-                </p>
-            </article>
-        </section>
-
-        <section id="two">
-            <article>
-                <p>
-                    With a combined capacity of 4,55,000 TPA, JK Paper, a unit of JK Organisation is India’s largest producer of Branded Papers and a leading player in Coated Papers and High-end Packaging Boards.  The Company began its journey more than half a century ago with 18,000 tons per annum capacity paper plant. It has grown over the years and maintained its quality leadership position.
-
-                    When Paper industry was content with producing ordinary Cream Wove quality, JK pioneered in 1962 the Surface sized Maplitho Paper (popularly came to be called ‘JK Maplitho’ – a premium quality printing paper ideally suited for the Litho Printing process. ‘JK Maplitho’ became Industry Benchmark.
-
-                    JK Paper has been constantly creating value in a highly capital intensive and cyclical business, where volume is traditionally considered as Key profit driver. Most companies concentrated on increasing capacity, JK Paper responded with a Brand driven strategy, with customer at its heart.
-
-                    JK Paper was among the earliest to invest in state-of-the-art A4 cutting lines for mass production of these products.
-
-                    JK Paper is synonymous with premium quality paper, which is reflected in customer’s trust in its products enjoying the ‘Brand’ status among its competitors. JK Copier’s status as the largest selling multifunctional office paper is not by chance but its efforts over the years.
-
-
-                </p>
-                <p>
-                    With a combined capacity of 4,55,000 TPA, JK Paper, a unit of JK Organisation is India’s largest producer of Branded Papers and a leading player in Coated Papers and High-end Packaging Boards.  The Company began its journey more than half a century ago with 18,000 tons per annum capacity paper plant. It has grown over the years and maintained its quality leadership position.
-
-                    When Paper industry was content with producing ordinary Cream Wove quality, JK pioneered in 1962 the Surface sized Maplitho Paper (popularly came to be called ‘JK Maplitho’ – a premium quality printing paper ideally suited for the Litho Printing process. ‘JK Maplitho’ became Industry Benchmark.
-
-                    JK Paper has been constantly creating value in a highly capital intensive and cyclical business, where volume is traditionally considered as Key profit driver. Most companies concentrated on increasing capacity, JK Paper responded with a Brand driven strategy, with customer at its heart.
-
-                    JK Paper was among the earliest to invest in state-of-the-art A4 cutting lines for mass production of these products.
-
-                    JK Paper is synonymous with premium quality paper, which is reflected in customer’s trust in its products enjoying the ‘Brand’ status among its competitors. JK Copier’s status as the largest selling multifunctional office paper is not by chance but its efforts over the years.
-
-
-                </p>
-            </article>
-        </section>
-
-
-        <section id="three">
-           
-            <article>
-                <p>
-                    With a combined capacity of 4,55,000 TPA, JK Paper, a unit of JK Organisation is India’s largest producer of Branded Papers and a leading player in Coated Papers and High-end Packaging Boards.  The Company began its journey more than half a century ago with 18,000 tons per annum capacity paper plant. It has grown over the years and maintained its quality leadership position.
-
-                    When Paper industry was content with producing ordinary Cream Wove quality, JK pioneered in 1962 the Surface sized Maplitho Paper (popularly came to be called ‘JK Maplitho’ – a premium quality printing paper ideally suited for the Litho Printing process. ‘JK Maplitho’ became Industry Benchmark.
-
-                    JK Paper has been constantly creating value in a highly capital intensive and cyclical business, where volume is traditionally considered as Key profit driver. Most companies concentrated on increasing capacity, JK Paper responded with a Brand driven strategy, with customer at its heart.
-
-                    JK Paper was among the earliest to invest in state-of-the-art A4 cutting lines for mass production of these products.
-
-                    JK Paper is synonymous with premium quality paper, which is reflected in customer’s trust in its products enjoying the ‘Brand’ status among its competitors. JK Copier’s status as the largest selling multifunctional office paper is not by chance but its efforts over the years.
-
-
-                </p>
-                <p>
-                    With a combined capacity of 4,55,000 TPA, JK Paper, a unit of JK Organisation is India’s largest producer of Branded Papers and a leading player in Coated Papers and High-end Packaging Boards.  The Company began its journey more than half a century ago with 18,000 tons per annum capacity paper plant. It has grown over the years and maintained its quality leadership position.
-
-                    When Paper industry was content with producing ordinary Cream Wove quality, JK pioneered in 1962 the Surface sized Maplitho Paper (popularly came to be called ‘JK Maplitho’ – a premium quality printing paper ideally suited for the Litho Printing process. ‘JK Maplitho’ became Industry Benchmark.
-
-                    JK Paper has been constantly creating value in a highly capital intensive and cyclical business, where volume is traditionally considered as Key profit driver. Most companies concentrated on increasing capacity, JK Paper responded with a Brand driven strategy, with customer at its heart.
-
-                    JK Paper was among the earliest to invest in state-of-the-art A4 cutting lines for mass production of these products.
-
-                    JK Paper is synonymous with premium quality paper, which is reflected in customer’s trust in its products enjoying the ‘Brand’ status among its competitors. JK Copier’s status as the largest selling multifunctional office paper is not by chance but its efforts over the years.
-
-
-                </p>
-            </article>
-        </section>
-
-
-        <section id="four">
-            <article>
-                <p>
-                    With a combined capacity of 4,55,000 TPA, JK Paper, a unit of JK Organisation is India’s largest producer of Branded Papers and a leading player in Coated Papers and High-end Packaging Boards.  The Company began its journey more than half a century ago with 18,000 tons per annum capacity paper plant. It has grown over the years and maintained its quality leadership position.
-
-                    When Paper industry was content with producing ordinary Cream Wove quality, JK pioneered in 1962 the Surface sized Maplitho Paper (popularly came to be called ‘JK Maplitho’ – a premium quality printing paper ideally suited for the Litho Printing process. ‘JK Maplitho’ became Industry Benchmark.
-
-                    JK Paper has been constantly creating value in a highly capital intensive and cyclical business, where volume is traditionally considered as Key profit driver. Most companies concentrated on increasing capacity, JK Paper responded with a Brand driven strategy, with customer at its heart.
-
-                    JK Paper was among the earliest to invest in state-of-the-art A4 cutting lines for mass production of these products.
-
-                    JK Paper is synonymous with premium quality paper, which is reflected in customer’s trust in its products enjoying the ‘Brand’ status among its competitors. JK Copier’s status as the largest selling multifunctional office paper is not by chance but its efforts over the years.
-
-
-                </p>
-                <p>
-                    With a combined capacity of 4,55,000 TPA, JK Paper, a unit of JK Organisation is India’s largest producer of Branded Papers and a leading player in Coated Papers and High-end Packaging Boards.  The Company began its journey more than half a century ago with 18,000 tons per annum capacity paper plant. It has grown over the years and maintained its quality leadership position.
-
-                    When Paper industry was content with producing ordinary Cream Wove quality, JK pioneered in 1962 the Surface sized Maplitho Paper (popularly came to be called ‘JK Maplitho’ – a premium quality printing paper ideally suited for the Litho Printing process. ‘JK Maplitho’ became Industry Benchmark.
-
-                    JK Paper has been constantly creating value in a highly capital intensive and cyclical business, where volume is traditionally considered as Key profit driver. Most companies concentrated on increasing capacity, JK Paper responded with a Brand driven strategy, with customer at its heart.
-
-                    JK Paper was among the earliest to invest in state-of-the-art A4 cutting lines for mass production of these products.
-
-                    JK Paper is synonymous with premium quality paper, which is reflected in customer’s trust in its products enjoying the ‘Brand’ status among its competitors. JK Copier’s status as the largest selling multifunctional office paper is not by chance but its efforts over the years.
-
-
-                </p>
-            </article>
-        </section>
-
-
-        <section id="five">
-            
-            <article>
-                <p>
-                    With a combined capacity of 4,55,000 TPA, JK Paper, a unit of JK Organisation is India’s largest producer of Branded Papers and a leading player in Coated Papers and High-end Packaging Boards.  The Company began its journey more than half a century ago with 18,000 tons per annum capacity paper plant. It has grown over the years and maintained its quality leadership position.
-
-                    When Paper industry was content with producing ordinary Cream Wove quality, JK pioneered in 1962 the Surface sized Maplitho Paper (popularly came to be called ‘JK Maplitho’ – a premium quality printing paper ideally suited for the Litho Printing process. ‘JK Maplitho’ became Industry Benchmark.
-
-                    JK Paper has been constantly creating value in a highly capital intensive and cyclical business, where volume is traditionally considered as Key profit driver. Most companies concentrated on increasing capacity, JK Paper responded with a Brand driven strategy, with customer at its heart.
-
-                    JK Paper was among the earliest to invest in state-of-the-art A4 cutting lines for mass production of these products.
-
-                    JK Paper is synonymous with premium quality paper, which is reflected in customer’s trust in its products enjoying the ‘Brand’ status among its competitors. JK Copier’s status as the largest selling multifunctional office paper is not by chance but its efforts over the years.
-
-
-                </p>
-                <p>
-                    With a combined capacity of 4,55,000 TPA, JK Paper, a unit of JK Organisation is India’s largest producer of Branded Papers and a leading player in Coated Papers and High-end Packaging Boards.  The Company began its journey more than half a century ago with 18,000 tons per annum capacity paper plant. It has grown over the years and maintained its quality leadership position.
-
-                    When Paper industry was content with producing ordinary Cream Wove quality, JK pioneered in 1962 the Surface sized Maplitho Paper (popularly came to be called ‘JK Maplitho’ – a premium quality printing paper ideally suited for the Litho Printing process. ‘JK Maplitho’ became Industry Benchmark.
-
-                    JK Paper has been constantly creating value in a highly capital intensive and cyclical business, where volume is traditionally considered as Key profit driver. Most companies concentrated on increasing capacity, JK Paper responded with a Brand driven strategy, with customer at its heart.
-
-                    JK Paper was among the earliest to invest in state-of-the-art A4 cutting lines for mass production of these products.
-
-                    JK Paper is synonymous with premium quality paper, which is reflected in customer’s trust in its products enjoying the ‘Brand’ status among its competitors. JK Copier’s status as the largest selling multifunctional office paper is not by chance but its efforts over the years.
-
-
-                </p>
-            </article>
-        </section>
+    <script>
+        $(function () {
+
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+
+        });
+    </script>
 </body>
 </html>
