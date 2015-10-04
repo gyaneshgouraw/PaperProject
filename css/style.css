@@ -1,5 +1,10 @@
 @import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
 /* HERE STARTS THE MAGIC */
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
 header {
     text-align: center;
     color: #fff;
