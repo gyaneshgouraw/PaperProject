@@ -60,6 +60,7 @@ section h2 {
     margin: 0;
     font-size: 3em;
 }
+hr.my-star-light,
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -69,7 +70,7 @@ hr.star-primary {
     border-top: solid 5px;
     text-align: center;
 }
-
+hr.my-star-light:after,
 hr.star-light:after,
 hr.star-primary:after {
     content: "\f005";
@@ -83,6 +84,14 @@ hr.star-primary:after {
 
 hr.star-light {
     border-color: #fff;
+}
+
+hr.my-star-light {
+    border-color: #000;
+}
+hr.my-star-light:after {
+    color: #000;
+   /* background-color: #18bc9c;*/
 }
 
 hr.star-light:after {
@@ -106,6 +115,11 @@ section.primary h2{
 section.success{
     background-color: #18bc9c;
     color: #fff;
+    }
+
+    section.white{
+
+    color: #000;
     }
 
 
