@@ -9,29 +9,32 @@
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
-     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <style>
     .bimg {
         background-image: url('images/wall.jpg');
     }
+    .bimg2 {
+        background-image: url('images/wall1.jpg');
+    }
 
-     .carouselWallpaper {
+    .carouselWallpaper {
         background-image: url('images/wood4.jpg');
     }
 
-#anim{
-    position: relative;
-    -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Chrome, Safari, Opera */
-    animation: myfirst 5s linear 2s infinite alternate;
-}
+    #anim{
+        position: relative;
+        -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Chrome, Safari, Opera */
+        animation: myfirst 5s linear 2s infinite alternate;
+    }
 
-@keyframes myfirst {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:300px; top:0px;}
-    50%  {background-color:blue; left:600px; top:0;}
-    75%  {background-color:green; left:300px; top:0px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
+    @keyframes myfirst {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:300px; top:0px;}
+        50%  {background-color:blue; left:600px; top:0;}
+        75%  {background-color:green; left:300px; top:0px;}
+        100% {background-color:red; left:0px; top:0px;}
+    }
     </style>
 
 </head>
@@ -83,15 +86,21 @@
     </nav>
 
     <!-- carousel starts here-->
-    <section class="carouselWallpaper" id="Home">
-      <div class="wrapper" >
-         <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height:400px">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
-               <li data-target="#myCarousel" data-slide-to="3"></li>
+    <section class="carouselWallpaper1" id="Home">
+           <div class="row">
+                       <div class="col-lg-12 text-center">
+                        <h2> Products</h2>
+                        <hr class="star-primary">
+                        </div>
+                     </div>
+      <div class="row" >
+       <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height:370px">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1"></li>
+         <li data-target="#myCarousel" data-slide-to="2"></li>
+         <li data-target="#myCarousel" data-slide-to="3"></li>
         				<!--	<li data-target="#myCarousel" data-slide-to="4"></li>
         					<li data-target="#myCarousel" data-slide-to="5"></li>
         					<li data-target="#myCarousel" data-slide-to="6"></li>
@@ -171,20 +180,24 @@
         				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
         					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         					<span class="sr-only">Next</span> 
-                       </a>  
-                   </div>
-               </div>
-           </section>
-           <!-- carousel ends here-->
-           <div class="content-wrapper">
+                     </a>  
+                 </div>
+             </div>
+         </section>
+         <!-- carousel ends here-->
+         <div class="content-wrapper">
 
-            <section class="primary mybgcolor2" id="portfolio">
+            <section class="primary" id="portfolio">
+                <div class="row">
+                       <div class="col-lg-12 text-center">
+                        <h2>Types Of Products</h2>
+                        <hr class="star-primary">
+                        </div>
+                     </div>
+              <div class="bimg2">
+                <div class="container ">
+                    
 
-                <div class="container">
-                   <div class="col-lg-12 text-center">
-                    <h2>Types Of Products</h2>
-
-                </div>
                 <div class="row"> <!--Well first row starts here-->
                     <div class="col-md-4">
                         <div class="thumbnail">
@@ -219,7 +232,7 @@
                 </div><!--Well first row ends here-->
 
                 <div class="row"> <!--Well second row starts here-->
-                   <div class="col-md-4">
+                 <div class="col-md-4">
                     <div class="thumbnail">
                         <img src="images/FullScape.jpg" style="width:100%; height:200px" />
                         <div class="caption">
@@ -250,6 +263,7 @@
                 </div>  
             </div> <!--Well second row ends here-->
         </div>
+        </div>
     </section>
     <section class="" id="services">
         <div class="">
@@ -261,7 +275,7 @@
             </div>
             <div class="row">
                 <div class="bimg">
-                <img id="anim"src="images/review2.png" width="50%" height="400px">
+                    <img id="anim"src="images/review2.png" width="50%" height="400px">
                 </div>
                         <!--    <div class="col-lg-4 col-lg-offset-2">
                                 <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
@@ -274,129 +288,129 @@
                 </section>
                 <section id="customers">
                     <div class="container">
-    <div class="row">
-       <div class="col-lg-12 text-center">
-                    <h2>Major Customers</h2>
-                    <hr class="star-primary">
+                        <div class="row">
+                         <div class="col-lg-12 text-center">
+                            <h2>Major Customers</h2>
+                            <hr class="star-primary">
+                        </div>
+                    </div>
                 </div>
-    </div>
-</div>
-<div class="carousel-reviews broun-block">
-    <div class="container">
-        <div class="row">
-            <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
-            
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="block-text rel zmin">
-                                <a title="" href="#">First</a>
-                                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-                                <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p>
-                                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
-                            </div>
-                            <div class="person-text rel">
-                                <img src="images/fb2.png" style="width:60px;height:60px"/>
-                                <a title="" href="#">Anna</a>
-                                <i>from Glasgow, Scotland</i>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 hidden-xs">
-                            <div class="block-text rel zmin">
-                                <a title="" href="#">Second: Anarchy</a>
-                                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-                                <p>The 2013 movie "The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these."  </p>
-                                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
-                            </div>
-                            <div class="person-text rel">
-                                <img src="images/fb2.png" style="width:60px;height:60px"/>
-                                <a title="" href="#">Ella Mentree</a>
-                                <i>United States</i>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
-                            <div class="block-text rel zmin">
-                                <a title="" href="#">Third: Fire & Rescue</a>
-                                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
-                                <p>What a funny and entertaining film! I did not know what to expect, this is the fourth film in this vehicle's universe with the two Cars movies and then the first Planes movie. I was wondering if maybe Disney pushed it a little bit. However, Planes: Fire and Rescue is an entertaining film that is a fantastic sequel in this magical franchise. </p>
-                                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
-                            </div>
-                            <div class="person-text rel">
-                                 <img src="images/fb2.png" style="width:60px;height:60px"/>
-                                <a title="" href="#">Rannynm</a>
-                                <i>Indonesia</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="block-text rel zmin">
-                                <a title="" href="#">Four</a>
-                                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-                                <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p>
-                                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
-                            </div>
-                            <div class="person-text rel">
-                                 <img src="images/fb2.png" style="width:60px;height:60px"/>
-                                <a title="" href="#">Anna</a>
-                                <i>from Glasgow, Scotland</i>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 hidden-xs">
-                            <div class="block-text rel zmin">
-                                <a title="" href="#">The Five: Anarchy</a>
-                                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-                                <p>The 2013 movie "The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these."  </p>
-                                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
-                            </div>
-                            <div class="person-text rel">
-                                 <img src="images/fb2.png" style="width:60px;height:60px"/>
-                                <a title="" href="#">Ella Mentree</a>
-                                <i>United States</i>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
-                            <div class="block-text rel zmin">
-                                <a title="" href="#">Six: Fire & Rescue</a>
-                                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
-                                <p>What a funny and entertaining film! I did not know what to expect, this is the fourth film in this vehicle's universe with the two Cars movies and then the first Planes movie. I was wondering if maybe Disney pushed it a little bit. However, Planes: Fire and Rescue is an entertaining film that is a fantastic sequel in this magical franchise. </p>
-                                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
-                            </div>
-                            <div class="person-text rel">
-                                <img src="images/fb2.png" style="width:60px;height:60px"/>
-                                <a title="" href="#">Rannynm</a>
-                                <i>Indonesia</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="block-text rel zmin">
-                                <a title="" href="#">seven</a>
-                                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-                                <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p>
-                                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
-                            </div>
-                            <div class="person-text rel">
-                                <img src="images/fb2.png" style="width:60px;height:60px"/>
-                                <a title="" href="#">Anna</a>
-                                <i>from Glasgow, Scotland</i>
+                <div class="carousel-reviews broun-block">
+                    <div class="container">
+                        <div class="row">
+                            <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="col-md-4 col-sm-6">
+                                            <div class="block-text rel zmin">
+                                                <a title="" href="#">First</a>
+                                                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                                                <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p>
+                                                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                            </div>
+                                            <div class="person-text rel">
+                                                <img src="images/fb2.png" style="width:60px;height:60px"/>
+                                                <a title="" href="#">Anna</a>
+                                                <i>from Glasgow, Scotland</i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 hidden-xs">
+                                            <div class="block-text rel zmin">
+                                                <a title="" href="#">Second: Anarchy</a>
+                                                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                                                <p>The 2013 movie "The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these."  </p>
+                                                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                            </div>
+                                            <div class="person-text rel">
+                                                <img src="images/fb2.png" style="width:60px;height:60px"/>
+                                                <a title="" href="#">Ella Mentree</a>
+                                                <i>United States</i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+                                            <div class="block-text rel zmin">
+                                                <a title="" href="#">Third: Fire & Rescue</a>
+                                                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
+                                                <p>What a funny and entertaining film! I did not know what to expect, this is the fourth film in this vehicle's universe with the two Cars movies and then the first Planes movie. I was wondering if maybe Disney pushed it a little bit. However, Planes: Fire and Rescue is an entertaining film that is a fantastic sequel in this magical franchise. </p>
+                                                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                            </div>
+                                            <div class="person-text rel">
+                                               <img src="images/fb2.png" style="width:60px;height:60px"/>
+                                               <a title="" href="#">Rannynm</a>
+                                               <i>Indonesia</i>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="item">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="block-text rel zmin">
+                                            <a title="" href="#">Four</a>
+                                            <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                                            <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p>
+                                            <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                        </div>
+                                        <div class="person-text rel">
+                                           <img src="images/fb2.png" style="width:60px;height:60px"/>
+                                           <a title="" href="#">Anna</a>
+                                           <i>from Glasgow, Scotland</i>
+                                       </div>
+                                   </div>
+                                   <div class="col-md-4 col-sm-6 hidden-xs">
+                                    <div class="block-text rel zmin">
+                                        <a title="" href="#">The Five: Anarchy</a>
+                                        <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                                        <p>The 2013 movie "The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these."  </p>
+                                        <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                    </div>
+                                    <div class="person-text rel">
+                                       <img src="images/fb2.png" style="width:60px;height:60px"/>
+                                       <a title="" href="#">Ella Mentree</a>
+                                       <i>United States</i>
+                                   </div>
+                               </div>
+                               <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+                                <div class="block-text rel zmin">
+                                    <a title="" href="#">Six: Fire & Rescue</a>
+                                    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
+                                    <p>What a funny and entertaining film! I did not know what to expect, this is the fourth film in this vehicle's universe with the two Cars movies and then the first Planes movie. I was wondering if maybe Disney pushed it a little bit. However, Planes: Fire and Rescue is an entertaining film that is a fantastic sequel in this magical franchise. </p>
+                                    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                </div>
+                                <div class="person-text rel">
+                                    <img src="images/fb2.png" style="width:60px;height:60px"/>
+                                    <a title="" href="#">Rannynm</a>
+                                    <i>Indonesia</i>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 hidden-xs">
-                            <div class="block-text rel zmin">
-                                <a title="" href="#">Eight: Anarchy</a>
-                                <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
-                                <p>The 2013 movie "The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these."  </p>
-                                <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                        <div class="item">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="block-text rel zmin">
+                                    <a title="" href="#">seven</a>
+                                    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                                    <p>Never before has there been a good film portrayal of ancient Greece's favourite myth. So why would Hollywood start now? This latest attempt at bringing the son of Zeus to the big screen is brought to us by X-Men: The last Stand director Brett Ratner. If the name of the director wasn't enough to dissuade ...</p>
+                                    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                </div>
+                                <div class="person-text rel">
+                                    <img src="images/fb2.png" style="width:60px;height:60px"/>
+                                    <a title="" href="#">Anna</a>
+                                    <i>from Glasgow, Scotland</i>
+                                </div>
                             </div>
-                            <div class="person-text rel">
-                                 <img src="images/fb2.png" style="width:60px;height:60px"/>
-                                <a title="" href="#">Ella Mentree</a>
-                                <i>United States</i>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
+                            <div class="col-md-4 col-sm-6 hidden-xs">
+                                <div class="block-text rel zmin">
+                                    <a title="" href="#">Eight: Anarchy</a>
+                                    <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star-empty"></span><span data-value="3" class="glyphicon glyphicon-star-empty"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span><span data-value="5" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+                                    <p>The 2013 movie "The Purge" left a bad taste in all of our mouths as nothing more than a pseudo-slasher with a hamfisted plot, poor pacing, and a desperate attempt at "horror." Upon seeing the first trailer for "The Purge: Anarchy," my first and most immediate thought was "we really don't need another one of these."  </p>
+                                    <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                                </div>
+                                <div class="person-text rel">
+                                   <img src="images/fb2.png" style="width:60px;height:60px"/>
+                                   <a title="" href="#">Ella Mentree</a>
+                                   <i>United States</i>
+                               </div>
+                           </div>
+                           <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
                             <div class="block-text rel zmin">
                                 <a title="" href="#">Nine: Fire & Rescue</a>
                                 <div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
@@ -421,57 +435,13 @@
         </div>
     </div>
 </div>
-                </section>
-                <section id="Reviews">
-                    <div class="container">
-                        <div class="col-lg-12 text-center">
-                            <h2>Our Partner's and Customers Reviews</h2>
-                            <hr class="star-primary">
-                        </div>
-                        <div class="row ">
-                          <div class="col-md-6">
-                            <div class="col-md-3">
-                                <img class="imgReviews" src="images/testimonial1.png" width="70px" height="70px">
-                            </div>
-                            <div class="col-md-9">
-                                <p>Based  on employee feedback, we found that Medi Assist services are up to the mark as per our set expectations. We appreciate your quick response for cashless hospitalization and settlement of reimbursement claims in stipulated time frame.</p>
-                            </div>
-
-                        </div>
-                        <div class="col-md-6">
-                         <div class="col-md-3">
-                            <img class="imgReviews" src="images/testimonial1.png" width="70px" height="70px">
-                        </div>
-                        <div class="col-md-9">
-                            <p>Based  on employee feedback, we found that Medi Assist services are up to the mark as per our set expectations. We appreciate your quick response for cashless hospitalization and settlement of reimbursement claims in stipulated time frame.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <br/>
-                <div class="row ">
-                  <div class="col-md-6">
-                    <div class="col-md-3">
-                        <img class="imgReviews" src="images/testimonial1.png" width="70px" height="70px">
-                    </div>
-                    <div class="col-md-9">
-                        <p>Based  on employee feedback, we found that Medi Assist services are up to the mark as per our set expectations. We appreciate your quick response for cashless hospitalization and settlement of reimbursement claims in stipulated time frame.</p>
-                    </div>
-
-                </div>
-                <div class="col-md-6">
-                 <div class="col-md-3">
-                    <img class="imgReviews" src="images/testimonial1.png" width="70px" height="70px">
-                </div>
-                <div class="col-md-9">
-                    <p>Based  on employee feedback, we found that Medi Assist services are up to the mark as per our set expectations. We appreciate your quick response for cashless hospitalization and settlement of reimbursement claims in stipulated time frame.</p>
-                </div>
-            </div>
-
+</section>
+<section id="Reviews">
+    <div class="container">
+        <div class="col-lg-12 text-center">
+            <h2>Our Partner's and Customers Reviews</h2>
+            <hr class="star-primary">
         </div>
-
-        <br/>
-
         <div class="row ">
           <div class="col-md-6">
             <div class="col-md-3">
@@ -483,13 +453,57 @@
 
         </div>
         <div class="col-md-6">
-         <div class="col-md-3">
+           <div class="col-md-3">
             <img class="imgReviews" src="images/testimonial1.png" width="70px" height="70px">
         </div>
         <div class="col-md-9">
             <p>Based  on employee feedback, we found that Medi Assist services are up to the mark as per our set expectations. We appreciate your quick response for cashless hospitalization and settlement of reimbursement claims in stipulated time frame.</p>
         </div>
     </div>
+
+</div>
+<br/>
+<div class="row ">
+  <div class="col-md-6">
+    <div class="col-md-3">
+        <img class="imgReviews" src="images/testimonial1.png" width="70px" height="70px">
+    </div>
+    <div class="col-md-9">
+        <p>Based  on employee feedback, we found that Medi Assist services are up to the mark as per our set expectations. We appreciate your quick response for cashless hospitalization and settlement of reimbursement claims in stipulated time frame.</p>
+    </div>
+
+</div>
+<div class="col-md-6">
+   <div class="col-md-3">
+    <img class="imgReviews" src="images/testimonial1.png" width="70px" height="70px">
+</div>
+<div class="col-md-9">
+    <p>Based  on employee feedback, we found that Medi Assist services are up to the mark as per our set expectations. We appreciate your quick response for cashless hospitalization and settlement of reimbursement claims in stipulated time frame.</p>
+</div>
+</div>
+
+</div>
+
+<br/>
+
+<div class="row ">
+  <div class="col-md-6">
+    <div class="col-md-3">
+        <img class="imgReviews" src="images/testimonial1.png" width="70px" height="70px">
+    </div>
+    <div class="col-md-9">
+        <p>Based  on employee feedback, we found that Medi Assist services are up to the mark as per our set expectations. We appreciate your quick response for cashless hospitalization and settlement of reimbursement claims in stipulated time frame.</p>
+    </div>
+
+</div>
+<div class="col-md-6">
+   <div class="col-md-3">
+    <img class="imgReviews" src="images/testimonial1.png" width="70px" height="70px">
+</div>
+<div class="col-md-9">
+    <p>Based  on employee feedback, we found that Medi Assist services are up to the mark as per our set expectations. We appreciate your quick response for cashless hospitalization and settlement of reimbursement claims in stipulated time frame.</p>
+</div>
+</div>
 
 </div>
 </div>
@@ -506,19 +520,19 @@
             <div class="thumbnail">
                 <img class="col-md-offset-2" src="images/Recognition2.png" width="150px"/>
                 <div class="caption">
-                 <center class="fontcolor2">Best Quality</center>
+                   <center class="fontcolor2">Best Quality</center>
 
-             </div>
-         </div>
-     </div>
+               </div>
+           </div>
+       </div>
 
 
- </div> 
+   </div> 
 </div>
 </section>
 <section class="white " id="contact">
     <div class="container">
-       <div class="row">
+     <div class="row">
         <div class="col-lg-12 text-center">
             <h2>Contact Us</h2>
             <hr class="star-primary">
@@ -526,7 +540,7 @@
     </div>
     <div class="row">
         <div class="col-md-6">
-           <div class="container">
+         <div class="container">
             <div class="col-md-6">
                 <div class="form-area">  
                     <form role="form">
@@ -574,7 +588,7 @@
 
 <!--Footer Starts-->
 <footer id="foot">
-   <div style="background-color:#323232">
+ <div style="background-color:#323232">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -590,18 +604,18 @@
         </div>
         <div style="margin-left:440px">
 
-           <a href="https://facebook.com" title="Facebook" target="_blank"><img src="images/fb.gif" style="width:40px; height:40px"></a>
-           <a href="https://twitter.com" title="Twitter" target="_blank"><img src="images/twitter.gif" style="width:40px; height:40px"></a>
-           <a href="https://linkedin.com" title="LinkedIn" target="_blank"><img src="images/LinkedIn.gif" style="width:40px; height:40px"></a>
-           <a href="https://plus.google.com" title="GooglePlus" target="_blank"><img src="images/Gplus.png" style="width:50px; height:50px"></a>
+         <a href="https://facebook.com" title="Facebook" target="_blank"><img src="images/fb.gif" style="width:40px; height:40px"></a>
+         <a href="https://twitter.com" title="Twitter" target="_blank"><img src="images/twitter.gif" style="width:40px; height:40px"></a>
+         <a href="https://linkedin.com" title="LinkedIn" target="_blank"><img src="images/LinkedIn.gif" style="width:40px; height:40px"></a>
+         <a href="https://plus.google.com" title="GooglePlus" target="_blank"><img src="images/Gplus.png" style="width:50px; height:50px"></a>
 
-       </div>
+     </div>
+ </div>
 </div>
-   </div>
 
 <div class="footer-bottom">
-<div class="pull-left">
-    Copyright &copy; RG Traders. All rights reserved.
+    <div class="pull-left">
+        Copyright &copy; RG Traders. All rights reserved.
     </div>
 </div>
 </footer>
