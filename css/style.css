@@ -152,6 +152,12 @@ img:hover {
   font-size: 20px;
 
 }
+.fontcolor3{
+  color: white;
+  font-size: 20px;
+ font-family: Comic Sans MS;
+
+}
 .mybgcolor{
     background-color: #18bc9c;
 }
@@ -176,3 +182,15 @@ img:hover {
     #map_canvas div {
         -webkit-transform: translate3d(0,0,0);
     }
+.myfont{
+    color:white;
+    font-family: Courier New;
+}
+.footer-bottom {
+    background-color: #000;
+    padding: 20px 0;
+    color: #FFF;
+    font-size: 13px;
+    font-family: Courier New;
+    margin-bottom: 5px;
+}

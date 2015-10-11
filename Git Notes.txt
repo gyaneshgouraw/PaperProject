@@ -1,0 +1,4 @@
+https://rtcamp.com/tutorials/git/git-resolve-merge-conflicts/
+
+git checkout --theirs PATH/FILE
+e.g: git checkout --theirs Index.html
