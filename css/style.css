@@ -152,12 +152,6 @@ img {
   font-size: 20px;
 
 }
-.fontcolor3{
-  color: white;
-  font-size: 20px;
- font-family: Comic Sans MS;
-
-}
 .mybgcolor{
     background-color: #18bc9c;
 }
@@ -182,20 +176,6 @@ img {
     #map_canvas div {
         -webkit-transform: translate3d(0,0,0);
     }
-<<<<<<< HEAD
-.myfont{
-    color:white;
-    font-family: Courier New;
-}
-.footer-bottom {
-    background-color: #000;
-    padding: 20px 0;
-    color: #FFF;
-    font-size: 13px;
-    font-family: Courier New;
-    margin-bottom: 5px;
-}
-=======
 
 
 
@@ -279,4 +259,3 @@ img {
 .rel {
     position: relative;
 }
->>>>>>> da624fdb0f9dd92e83eb0c3ffc3f16201f85e254
